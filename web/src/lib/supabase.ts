@@ -162,9 +162,33 @@ export async function createBusiness(biz: Omit<Business, 'id' | 'created_at' | '
 
   if (isConfigured && supabase) {
     try {
-      const { data, error } = await supabase.from('businesses').insert([newBusiness]).select().single();
+      const dbPayload = {
+        name: biz.name,
+        slug: biz.slug,
+        tagline: biz.tagline || null,
+        description: biz.description,
+        category_id: biz.category_id,
+        subcategory_id: biz.subcategory_id || null,
+        country_code: biz.country_code,
+        state: biz.state,
+        city: biz.city,
+        address: biz.address,
+        postal_code: biz.postal_code || null,
+        phone: biz.phone,
+        whatsapp: biz.whatsapp || null,
+        email: biz.email,
+        website: biz.website || null,
+        logo_url: biz.logo_url || null,
+        cover_url: biz.cover_url || null,
+        gallery_images: biz.gallery_images || [],
+        status: 'pending' as const,
+      };
+
+      const { data, error } = await supabase.from('businesses').insert([dbPayload]).select().single();
       if (!error && data) {
-        return { success: true, data: data as Business };
+        return { success: true, data: { ...newBusiness, ...data } };
+      } else if (error) {
+        console.warn('Supabase insert error:', error);
       }
     } catch (e: any) {
       console.warn('Supabase insert failed, saving to local store', e);

@@ -13,7 +13,7 @@ export const DEMO_COUNTRIES: Country[] = [
 
 export const DEMO_CATEGORIES: Category[] = [
   {
-    id: 'cat-1',
+    id: '11111111-1111-1111-1111-111111111101',
     slug: 'technology-software',
     name_en: 'Technology & IT',
     name_gu: 'ટેકનોલોજી અને સોફ્ટવેર',
@@ -22,7 +22,7 @@ export const DEMO_CATEGORIES: Category[] = [
     sort_order: 1
   },
   {
-    id: 'cat-2',
+    id: '11111111-1111-1111-1111-111111111102',
     slug: 'manufacturing-textiles',
     name_en: 'Manufacturing & Textiles',
     name_gu: 'ઉત્પાદન અને કાપડ ઉદ્યોગ',
@@ -31,7 +31,7 @@ export const DEMO_CATEGORIES: Category[] = [
     sort_order: 2
   },
   {
-    id: 'cat-3',
+    id: '11111111-1111-1111-1111-111111111103',
     slug: 'gems-jewelry',
     name_en: 'Gems & Jewelry',
     name_gu: 'હીરા અને ઝવેરાત',
@@ -40,7 +40,7 @@ export const DEMO_CATEGORIES: Category[] = [
     sort_order: 3
   },
   {
-    id: 'cat-4',
+    id: '11111111-1111-1111-1111-111111111104',
     slug: 'food-agriculture',
     name_en: 'Food & Agriculture',
     name_gu: 'ખાદ્ય અને કૃષિ',
@@ -49,7 +49,7 @@ export const DEMO_CATEGORIES: Category[] = [
     sort_order: 4
   },
   {
-    id: 'cat-5',
+    id: '11111111-1111-1111-1111-111111111105',
     slug: 'healthcare-medical',
     name_en: 'Healthcare & Medical',
     name_gu: 'આરોગ્ય અને તબીબી',
@@ -58,7 +58,7 @@ export const DEMO_CATEGORIES: Category[] = [
     sort_order: 5
   },
   {
-    id: 'cat-6',
+    id: '11111111-1111-1111-1111-111111111106',
     slug: 'finance-legal',
     name_en: 'Finance & Legal',
     name_gu: 'નાણાકીય અને કાનૂની',
@@ -67,7 +67,7 @@ export const DEMO_CATEGORIES: Category[] = [
     sort_order: 6
   },
   {
-    id: 'cat-7',
+    id: '11111111-1111-1111-1111-111111111107',
     slug: 'real-estate-construction',
     name_en: 'Real Estate & Infrastructure',
     name_gu: 'રિયલ એસ્ટેટ અને બાંધકામ',
@@ -76,7 +76,7 @@ export const DEMO_CATEGORIES: Category[] = [
     sort_order: 7
   },
   {
-    id: 'cat-8',
+    id: '11111111-1111-1111-1111-111111111108',
     slug: 'retail-wholesale',
     name_en: 'Retail & Wholesale',
     name_gu: 'છૂટક અને જથ્થાબંધ વેપાર',
